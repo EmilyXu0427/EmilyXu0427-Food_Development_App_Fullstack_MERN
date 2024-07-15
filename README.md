@@ -9,7 +9,7 @@
 <div>
 <h2/>Purpose and original interest</h2>
 </div>
-Previously, I have worked as Food Development Technologist in food industry. At that time, I need to develop multiple recipes for different projects and keep track of the recipe changes through time. One challenge I have encountered is lack of tools to keep track of these recipes. At that time, my only tool is excel and I have created multiple sheets under one excel which is very inconvenient. Therefore, I want to develop a webapp to replace my old excel sheet. 
+Previously, I have worked as Food Development Technologist in food industry. At that time, I need to develop multiple recipes for different projects and keep track of the recipe changes through time. One challenge I have encountered was lack of tools to keep track of these recipes. My only tool is excel and I have created multiple sheets under one excel which is very inconvenient. Therefore, I want to develop a web app to replace my old excel sheet. 
 <br>
 <div>
 <h2/>End user functions</h2>
