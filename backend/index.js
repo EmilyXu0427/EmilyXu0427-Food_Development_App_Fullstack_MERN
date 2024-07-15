@@ -3,6 +3,7 @@ import { PORT, mongoDBURL } from "./config.js";
 import mongoose from "mongoose";
 import { Recipe } from "./models/recipeModel.js";
 import recipesRoute from './routes/recipesRoute.js';
+import cors from 'cors';
 
 
 const app = express();
@@ -10,6 +11,8 @@ const app = express();
 // Middleware for parsing request body as JSON file
 app.use(express.json());
 
+// all all origins with default of  cors(*)
+app.use(cors());
 
 app.get('/', (request, response) => { //sets up a GET request handler for the root URL
     console.log(request);
