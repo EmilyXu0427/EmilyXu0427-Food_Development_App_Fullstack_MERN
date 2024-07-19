@@ -9,7 +9,7 @@
 <div>
 <h2/>Purpose and original interest</h2>
 </div>
-Previously, I have worked as Food Development Technologist in food industry. At that time, I need to develop multiple recipes for different projects and keep track of the recipe changes through time. One challenge I have encountered was lack of tools to keep track of these recipes. My only tool is excel and I have created multiple sheets under one excel which is very inconvenient. Therefore, I want to develop a web app to replace my old excel sheet. 
+Previously, I have worked as Food Development Technologist in food industry. At that time, I need to develop multiple recipes for different projects and keep track of the recipe changes over time. One challenge I have encountered was lack of tools to keep track of these recipes. My only tool is excel and I have created multiple sheets under one excel which is very inconvenient. Therefore, I want to develop a web app to replace my old excel sheet. 
 <br>
 <div>
 <h2/>End user functions</h2>
@@ -35,6 +35,12 @@ MongoDB, React, Node, Express
 <br>
 <div>
 
+<div>
+<h2/>Snapshot of App</h2>
+</div>
+<img width="1494" alt="Screenshot 2024-07-18 at 9 42 49 PM" src="https://github.com/user-attachments/assets/abb9748e-3318-4f89-81a2-51da92b26a0a">
+
+<img width="1489" alt="Screenshot 2024-07-18 at 9 43 28 PM" src="https://github.com/user-attachments/assets/b798a211-2493-4092-92ce-1bc370fa5eb1">
 
 
 
