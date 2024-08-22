@@ -19,10 +19,10 @@ This application is mainly designed for food development professionals to store 
 
 This application should be able to carry out the following functions:  <br>
 
-✅ User can save recipe information includes project ID, recipe ID, ingredients, cooking instruction, comments, recipe created date and updated date (backend completed) <br>
+✅ User can save recipe information includes project ID, recipeID, ingredients, cooking instruction, comments, recipe created date and updated date (backend completed) <br>
 ✅ Homepage displays all previously saved recipes (function completed) <br>
 ✅ User can view the recipe details by click the view button (function completed) <br>
-✅ User can create new recipe by clicking the add button (function in progress)<br>
+✅ User can create new recipe by clicking the add button (function completed)<br>
 ✅ User can modify existing recipe by clicking the modify button (function in progress) <br>
 ✅ User can delete the recipe from the homepage by clicking the delete button (function in progress)<br>
 ✅ User can filter the recipes by the project ID (function in progress)<br>
@@ -42,6 +42,6 @@ MongoDB, React, Node, Express
 
 <img width="1489" alt="Screenshot 2024-07-18 at 9 43 28 PM" src="https://github.com/user-attachments/assets/b798a211-2493-4092-92ce-1bc370fa5eb1">
 
-
+<img width="1895" alt="Screenshot 2024-08-21 at 5 05 27 PM" src="https://github.com/user-attachments/assets/e3fbf943-c852-41a3-a2fe-e607a8621695">
 
 
