@@ -43,7 +43,7 @@ const RecipeSingleCard = ({ recipe }) => {
         <Link to={`/books/details/${recipe._id}`}>
           <BsInfoCircle className='text-2xl text-green-800 hover:text-black' />
         </Link>
-        <Link to={`/books/edit/${recipe._id}`}>
+        <Link to={`/recipes/edit/${recipe._id}`}>
           <AiOutlineEdit className='text-2xl text-yellow-600 hover:text-black' />
         </Link>
         <Link to={`/books/delete/${recipe._id}`}>
