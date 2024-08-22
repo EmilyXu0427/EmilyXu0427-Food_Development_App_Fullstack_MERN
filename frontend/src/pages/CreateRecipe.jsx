@@ -3,6 +3,7 @@ import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // all to navigate to different routes in react app
+import createRecipeBG from '../pages/picture/createRecipeBG.jpg';
 
 const CreateRecipe = () => {
   const [projectID, setProjectID] = useState(''); //initialize projectID state as empty string
@@ -35,11 +36,13 @@ const CreateRecipe = () => {
   }
 
   return (
-    <div className ='p-4'>
+    <div 
+    className ="bg-cover bg-center h-full w-full" 
+    style={{ backgroundImage: `url(${createRecipeBG})` }}>
       <BackButton />
-      <h1 className='text-5xl font-semibold text-center font-sans text-green-600 my-10 rounded-lg p-8 '>Create New Recipe</h1>
+      <h1 className='text-5xl font-semibold text-center font-sans text-yellow-100 my-10 rounded-lg p-8 '>Create New Recipe</h1>
       {loading ? <Spinner /> : ''}
-      <div className='flex flex-col border-2 border-green-400 rounded-xl w-[600px] h-[800px] p-4 mx-auto bg-green-100'>
+      <div className='flex flex-col border-2 border-yellow-100 rounded-xl w-[600px] h-[800px] p-4 mx-auto bg-yellow-100'>
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500'>ProjectID</label>
           <input

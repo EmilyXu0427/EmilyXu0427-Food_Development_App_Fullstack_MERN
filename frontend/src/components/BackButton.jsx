@@ -7,7 +7,7 @@ const BackButton = () => {
           <Link
             // to={destination}
             to={'/'} //click the backbutton and direct to root addresss
-            className='bg-purple-600 text-white px-6 py-3 rounded-lg w-fit'
+            className='bg-yellow-100 px-6 py-3 rounded-lg w-fit'
           >
             <BsArrowLeftCircleFill className='text-5xl' />
           </Link>
