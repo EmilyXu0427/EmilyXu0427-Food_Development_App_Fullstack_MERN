@@ -38,10 +38,8 @@ MongoDB, React, Node, Express
 <div>
 <h2/>Snapshot of App</h2>
 </div>
-<img width="1494" alt="Screenshot 2024-07-18 at 9 42 49 PM" src="https://github.com/user-attachments/assets/abb9748e-3318-4f89-81a2-51da92b26a0a">
-
-<img width="1489" alt="Screenshot 2024-07-18 at 9 43 28 PM" src="https://github.com/user-attachments/assets/b798a211-2493-4092-92ce-1bc370fa5eb1">
-
-<img width="1895" alt="Screenshot 2024-08-21 at 5 05 27 PM" src="https://github.com/user-attachments/assets/e3fbf943-c852-41a3-a2fe-e607a8621695">
+<img width="1506" alt="Screenshot 2024-08-21 at 11 42 21 PM" src="https://github.com/user-attachments/assets/a295e111-1a33-46f3-a20c-3803bf7b21cc">
+<img width="1509" alt="Screenshot 2024-08-21 at 11 45 18 PM" src="https://github.com/user-attachments/assets/1aae9670-7871-4c64-b3ed-f1cea6f0e90d">
+<img width="1496" alt="Screenshot 2024-08-21 at 11 39 47 PM" src="https://github.com/user-attachments/assets/4f9f9954-0007-40d6-b1ad-a51db9cdded6">
 
 
