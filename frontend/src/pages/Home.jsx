@@ -4,7 +4,8 @@ import Spinner from '../components/Spinner';
 import { Link } from 'react-router-dom';
 import { MdOutlineAddBox } from 'react-icons/md';
 import RecipeCard from '../components/home/RecipeCard';
-import { IoMdAddCircle } from "react-icons/io";
+import { IoMdAddCircle } from 'react-icons/io';
+import homeBG from '../pages/picture/homeBG.jpg';
 
 
 const Home = () => {
@@ -29,7 +30,9 @@ const Home = () => {
     }, []);
 
     return (
-        <div className='p-4'>
+        <div
+        className ="bg-cover bg-center h-screen w-screen" 
+        style={{ backgroundImage: `url(${homeBG})` }}>
             <div className='flex justify-between items-center'>
                 <h1 className='text-5xl font-semibold text-center font-sans text-purple-800 my-10 rounded-lg p-8 '> Product Development Recipe List</h1>
 

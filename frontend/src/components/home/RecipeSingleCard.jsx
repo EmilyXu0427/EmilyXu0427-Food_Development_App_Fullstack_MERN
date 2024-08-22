@@ -13,7 +13,7 @@ const RecipeSingleCard = ({ recipe }) => {
   const [showModel, setShowModel] = useState(false);
 
   return (
-    <div className='border-2 border-black-800 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl'>
+    <div className='border-2 border-black-800 rounded-lg px-4 bg-gray-100 py-2 m-4 relative hover:shadow-xl'>
       <h2 className='absolute top-1 right-1 px-4 py-1 bg-purple-300 rounded-lg'>
         {recipe.projectID}
       </h2>
