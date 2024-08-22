@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
-import { BsArrowLeft } from 'react-icons/bs';
+import { BsArrowLeftCircleFill } from 'react-icons/bs';
 
 const BackButton = () => {
     return (
         <div className='flex'>
           <Link
-            to={destination}
-            className='bg-sky-800 text-white px-4 py-1 rounded-lg w-fit'
+            // to={destination}
+            to={'/'} //click the backbutton and direct to root addresss
+            className='bg-purple-600 text-white px-6 py-3 rounded-lg w-fit'
           >
-            <BsArrowLeft className='text-2xl' />
+            <BsArrowLeftCircleFill className='text-5xl' />
           </Link>
         </div>
       );
