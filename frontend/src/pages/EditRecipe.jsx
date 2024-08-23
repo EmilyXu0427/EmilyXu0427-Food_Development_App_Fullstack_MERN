@@ -58,7 +58,7 @@ const EditRecipe = () => {
 
   return (
     <div 
-    className ="bg-cover bg-center h-full w-full" 
+    className ="bg-cover bg-center h-screen w-screen" 
     style={{ backgroundImage: `url(${createRecipeBG})` }}
     >
       <BackButton />
@@ -66,7 +66,7 @@ const EditRecipe = () => {
       {loading ? <Spinner /> : ''}
       <div className='flex flex-col border-2 border-yellow-100 rounded-xl w-[600px] h-[800px] p-4 mx-auto bg-yellow-100'>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>ProjectID</label>
+          <label className='text-xl mr-4 text-gray-500 font-semibold font-sans'>Project ID</label>
           <input
           type ='text'
           value={projectID}
@@ -76,7 +76,7 @@ const EditRecipe = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>RecipeID</label>
+          <label className='text-xl mr-4 text-gray-500 font-semibold font-sans'>Recipe ID</label>
           <input
           type ='text'
           value={recipeID}
@@ -86,7 +86,7 @@ const EditRecipe = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Ingredients</label>
+          <label className='text-xl mr-4 text-gray-500 font-semibold font-sans'>Ingredients</label>
           <input
           type ='text'
           value={ingredients}
@@ -96,7 +96,7 @@ const EditRecipe = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>CookInstruction</label>
+          <label className='text-xl mr-4 text-gray-500 font-semibold font-sans'>CookInstruction</label>
           <textarea
           type ='text'
           value={cookInstruction}
@@ -106,7 +106,7 @@ const EditRecipe = () => {
         </div>
 
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Comment</label>
+          <label className='text-xl mr-4 text-gray-500 font-semibold font-sans'>Comment</label>
           <textarea
           type ='text'
           value={comment}
@@ -115,7 +115,7 @@ const EditRecipe = () => {
           />
         </div>
 
-        <button className='p-2 bg-gray-300 border-gray-300 rounded-xl py-2 w-1/2 mx-auto' onClick={handleEditRecipe}>
+        <button className='p-2 bg-black text-white font-sans font-semibold rounded-xl py-2 w-1/2 mx-auto' onClick={handleEditRecipe}>
           Save
         </button>
       </div>
