@@ -12,7 +12,7 @@ const RecipeModel = ({ recipe, onClose }) => {
         >
             <div
                 onClick={(event) => event.stopPropagation()}
-                className='w-[600px] max-w-full h-[400px] bg-gray-200 rounded-xl p-4 flex flex-col text-2xl relative'
+                className='w-[600px] max-w-full h-[400px] bg-gray-100 rounded-xl p-4 flex flex-col text-2xl relative'
             >
                 <AiOutlineClose
                     className='absolute right-6 top-6 text-3xl text-purple-600 cursor-pointer'
