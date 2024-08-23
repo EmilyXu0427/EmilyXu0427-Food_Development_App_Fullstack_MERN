@@ -1,6 +1,6 @@
 
 import { AiOutlineClose } from 'react-icons/ai';
-import { CiCircleList, CiClock2, CiFaceSmile, CiBullhorn } from "react-icons/ci";
+import { CiCircleList, CiClock2, CiFaceSmile} from "react-icons/ci";
 import { FaPencilAlt } from "react-icons/fa";
 import { PiCookingPotFill } from "react-icons/pi";
 
@@ -12,38 +12,38 @@ const RecipeModel = ({ recipe, onClose }) => {
         >
             <div
                 onClick={(event) => event.stopPropagation()}
-                className='w-[600px] max-w-full h-[400px] bg-white rounded-xl p-4 flex flex-col relative'
+                className='w-[600px] max-w-full h-[400px] bg-gray-200 rounded-xl p-4 flex flex-col text-2xl relative'
             >
                 <AiOutlineClose
-                    className='absolute right-6 top-6 text-3xl text-blue-600 cursor-pointer'
+                    className='absolute right-6 top-6 text-3xl text-purple-600 cursor-pointer'
                     onClick={onClose}
                 />
-                <h2 className='w-fit px-4 py-1 bg-blue-300 rounded-lg'>
+                <h2 className='w-fit px-4 py-1 bg-purple-300 font-semibold rounded-lg'>
                     {recipe.projectID}
                 </h2>
                 <h4 className='my-2 text-gray-500'>{recipe._id}</h4>
                 <div className='flex justify-start items-center gap-x-2'>
-                    <CiFaceSmile className='text-blue-800 text-2xl' />
+                    <CiFaceSmile className='text-purple-600 text-3xl' />
                     <h2 className='my-1'>{recipe.recipeID}</h2>
                 </div>
                 <div className='flex justify-start items-center gap-x-2'>
-                    <CiCircleList className='text-blue-800 text-2xl' />
+                    <CiCircleList className='text-purple-600 text-3xl' />
                     <h2 className='my-1'>{recipe.ingredients}</h2>
                 </div>
                 <div className='flex justify-start items-center gap-x-2'>
-                    <PiCookingPotFill className='text-blue-800 text-3xl' />
+                    <PiCookingPotFill className='text-purple-600 text-3xl' />
                     <h2 className='my-1'>{recipe.cookInstruction}</h2>
                 </div>
                 <div className='flex justify-start items-center gap-x-2'>
-                    <FaPencilAlt className='text-blue-800 text-2xl' />
+                    <FaPencilAlt className='text-purple-600 text-3xl' />
                     <h2 className='my-1'>{recipe.comment}</h2>
                 </div>
                 <div className='flex justify-start items-center gap-x-2'>
-                    <CiClock2 className='text-blue-800 text-2xl' />
+                    <CiClock2 className='text-purple-600 text-3xl' />
                     <h2 className='my-1'>{recipe.createdAt}</h2>
                 </div>
                 <div className='flex justify-start items-center gap-x-2'>
-                    <CiClock2 className='text-blue-800 text-2xl' />
+                    <CiClock2 className='text-purple-600 text-3xl' />
                     <h2 className='my-1'>{recipe.updatedAt}</h2>
                 </div>
 
