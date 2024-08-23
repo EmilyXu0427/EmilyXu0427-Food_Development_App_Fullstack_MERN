@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
+import showRecipeBG from '../pages/picture/BG3.jpg'
 
 const ShowRecipe = () => {
   const [recipe, setRecipe] = useState({});
@@ -24,35 +25,47 @@ const ShowRecipe = () => {
   }, []);
 
   return (
-    <div className='p-4'>
+    // <div className='p-4'>
+    <div className ='bg-cover bg-color h-screen w-screen'
+    style = {{ backgroundImage:`url(${showRecipeBG})`}}>
       <BackButton />
-      <h1 className='text-3xl my-4'>Show Book</h1>
+      <h1 className='text-5xl font-semibold text-center font-sans text-black my-10 rounded-lg p-8 '>Recipe Details</h1>
       {loading ? (
         <Spinner />
       ) : (
-        <div className='flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4'>
+        <div className='flex flex-col font-sans text-xl bg-gray-100 rounded-xl w-fit p-10 mx-auto'>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Id</span>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Id:</span>
             <span>{recipe._id}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>projectID</span>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Project ID:</span>
             <span>{recipe.projectID}</span>
           </div>
+          
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>ingredients</span>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Recipe ID:</span>
+            <span>{recipe.recipeID}</span>
+          </div>
+          
+          <div className='my-4'>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Ingredients:</span>
             <span>{recipe.ingredients}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Cook Instruction</span>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Cook Instruction:</span>
             <span>{recipe.cookInstruction}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Create Time</span>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Comment:</span>
+            <span>{recipe.comment}</span>
+          </div>
+          <div className='my-4'>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Create Time:</span>
             <span>{new Date(recipe.createdAt).toString()}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Last Update Time</span>
+            <span className='text-2xl mr-4 font-semibold text-pink-700'>Last Update Time:</span>
             <span>{new Date(recipe.updatedAt).toString()}</span>
           </div>
         </div>
