@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
-import showRecipeBG from '../pages/picture/BG3.jpg'
+import showRecipeBG from '../pages/picture/showRecipeBG.jpg'
 
 const ShowRecipe = () => {
   const [recipe, setRecipe] = useState({});
@@ -29,7 +29,7 @@ const ShowRecipe = () => {
     <div className ='bg-cover bg-color h-screen w-screen'
     style = {{ backgroundImage:`url(${showRecipeBG})`}}>
       <BackButton />
-      <h1 className='text-5xl font-semibold text-center font-sans text-black my-10 rounded-lg p-8 '>Recipe Details</h1>
+      <h1 className='text-5xl font-semibold text-center font-sans text-black my-10 rounded-lg p-8'>Recipe Details</h1>
       {loading ? (
         <Spinner />
       ) : (
