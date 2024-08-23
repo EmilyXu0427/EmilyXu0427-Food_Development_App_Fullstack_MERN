@@ -6,8 +6,9 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineDelete } from 'react-icons/md';
 import { useState } from 'react';
 import RecipeModel from './RecipeModel';
-import { CiCircleList, CiClock2} from "react-icons/ci";
+import { CiCircleList, CiClock2 } from "react-icons/ci";
 import { FaOrcid, FaIdCard } from "react-icons/fa";
+import DeleteRecipe from '../../pages/DeleteRecipe';
 
 const RecipeSingleCard = ({ recipe }) => {
   const [showModel, setShowModel] = useState(false);
@@ -17,7 +18,7 @@ const RecipeSingleCard = ({ recipe }) => {
       <h2 className='absolute top-1 right-1 px-4 py-1 bg-purple-300 rounded-lg'>
         {recipe.projectID}
       </h2>
-      
+
       <div className='flex justify-start items-center gap-x-2'>
         <FaIdCard className='text-green-300 text-2xl' />
         <h2 className='my-1'>{recipe.recipeID}</h2>
@@ -40,13 +41,13 @@ const RecipeSingleCard = ({ recipe }) => {
           className='text-3xl text-blue-800 hover:text-black cursor-pointer'
           onClick={() => setShowModel(true)}
         />
-        <Link to={`/books/details/${recipe._id}`}>
+        <Link to={`/recipes/details/${recipe._id}`}>
           <BsInfoCircle className='text-2xl text-green-800 hover:text-black' />
         </Link>
         <Link to={`/recipes/edit/${recipe._id}`}>
           <AiOutlineEdit className='text-2xl text-yellow-600 hover:text-black' />
         </Link>
-        <Link to={`/books/delete/${recipe._id}`}>
+        <Link to={`/recipes/delete/${recipe._id}`}>
           <MdOutlineDelete className='text-2xl text-red-600 hover:text-black' />
         </Link>
       </div>
