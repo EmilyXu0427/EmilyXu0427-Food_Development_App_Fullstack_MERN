@@ -26,5 +26,6 @@ dist-ssr
 # Ignore configuration file
 configai.jsx
 config.js
+OpenAIRequests.jsx
 
 
