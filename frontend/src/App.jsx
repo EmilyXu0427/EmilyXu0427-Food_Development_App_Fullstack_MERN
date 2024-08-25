@@ -5,16 +5,20 @@ import DeleteRecipe from './pages/DeleteRecipe'
 import EditRecipe from './pages/EditRecipe'
 import Home from './pages/Home'
 import ShowRecipe from './pages/ShowRecipe'
+import RecipeChatbot from './pages/RecipeChatbot';
 
 
 const App = () => {
   return (
    <Routes>
-    <Route path='/' element={<Home />} /> /* This route matches the root URL. When the user navigates to the root URL, the Home component will be rendered */
+    {/* This route matches the root URL. When the user navigates to the root URL, the Home component will be rendered */}
+    <Route path='/' element={<Home />} /> 
     <Route path='/recipes/create' element={<CreateRecipe />} />
     <Route path='/recipes/details/:id' element={<ShowRecipe />} />
     <Route path='/recipes/edit/:id' element={<EditRecipe />} />
     <Route path='/recipes/delete/:id' element={<DeleteRecipe />} />
+    {/* Add page for chatbot */}
+    <Route path='/recipes/chatbot' element={<RecipeChatbot />} />
    </Routes>
   )
 }
