@@ -19,7 +19,7 @@ const RecipeChatbot = () => {
             <div className='flex items-center justify-center min-h-screen'>
                 <div className='flex flex-col text-xl font-sans font-semibold w-[600px] h-[1000px] p-10 bg-red-200 mx-auto rounded-3xl'>
                     {/* <span className='flex-grow bg-white border rounded-lg'>{answer}</span> */}
-                    <span className='block h-108 w-108 overflow-y-scroll bg-white border rounded-lg'>{answer}</span>
+                    <span className='block min-w-[200px] min-h-[700px] overflow-y-scroll bg-white border rounded-lg'>{answer}</span>
                     <span className='pb-3 text-2xl pt-5'> Start chat with recipe chatbot </span>
                     <textarea
                         onChange={(event) => setPrompt(event.target.value)}
