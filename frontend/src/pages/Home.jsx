@@ -53,13 +53,13 @@ const Home = () => {
                     {/* Link to create new recipe page */}
                     <button
                         onClick={handleClickCreatRecipe}
-                        className="bg-purple-600 text-white font-semibold font-sans text-xl rounded-3xl p-3"
+                        className="bg-purple-600 text-white font-semibold font-sans text-xl text-yellow-100 rounded-3xl p-3"
                     >Create new recipe</button>
 
                     {/* Link to recipe chatbot page */}
                     <button
                         onClick={handleClickChatbot}
-                        className="bg-purple-600 text-white font-semibold font-sans text-xl rounded-3xl p-3"
+                        className="bg-purple-600 text-white font-semibold font-sans text-xl text-yellow-100 rounded-3xl p-3"
                     >Recipe Chatbot</button>
                 </div>
             </div>
