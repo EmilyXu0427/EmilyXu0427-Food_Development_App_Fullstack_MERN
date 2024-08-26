@@ -3,7 +3,7 @@ import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
-import createRecipeBG from '../pages/picture/createRecipeBG.jpg';
+import updateRecipeBG from '../pages/picture/updateRecipeBG.jpg';
 
 const EditRecipe = () => {
   const [projectID, setProjectID] = useState('');
@@ -59,12 +59,12 @@ const EditRecipe = () => {
   return (
     <div 
     className ="bg-cover bg-center h-screen w-screen" 
-    style={{ backgroundImage: `url(${createRecipeBG})` }}
+    style={{ backgroundImage: `url(${updateRecipeBG})` }}
     >
       <BackButton />
-      <h1 className='text-5xl font-semibold text-center font-sans text-yellow-100 my-10 rounded-lg p-8 '>Update Recipe</h1>
+      <h1 className='text-5xl font-semibold text-center font-sans text-green-200 my-10 rounded-lg p-8 '>Update Recipe</h1>
       {loading ? <Spinner /> : ''}
-      <div className='flex flex-col border-2 border-yellow-100 rounded-xl w-[600px] h-[800px] p-4 mx-auto bg-yellow-100'>
+      <div className='flex flex-col border-2 rounded-xl w-[600px] h-[800px] p-4 mx-auto bg-green-200'>
         <div className='my-4'>
           <label className='text-xl mr-4 text-gray-500 font-semibold font-sans'>Project ID</label>
           <input

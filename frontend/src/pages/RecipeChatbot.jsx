@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getAnswerFromAI } from '../requests/OpenAIRequests';
 import chatBotBG from '../pages/picture/chatBotBG.jpg';
+import BackButton from '../components/BackButton';
 
 const RecipeChatbot = () => {
     const [prompt, setPrompt] = useState('');
@@ -15,6 +16,7 @@ const RecipeChatbot = () => {
     return (
         <div className='bg-cover bg-center h-screen w-screen'
             style={{ backgroundImage: `url(${chatBotBG})` }}>
+            <BackButton />
             {/* Create parent container to adjust height and width of chatbot window */}
             <div className='flex items-center justify-center min-h-screen'>
                 <div className='flex flex-col text-xl font-sans font-semibold w-[600px] h-[1000px] p-10 bg-red-200 mx-auto rounded-3xl'>

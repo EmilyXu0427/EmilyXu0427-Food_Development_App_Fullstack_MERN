@@ -37,7 +37,7 @@ const CreateRecipe = () => {
 
   return (
     <div 
-    className ="bg-cover bg-center h-full w-full" 
+    className ="bg-cover bg-center h-screen w-screen" 
     style={{ backgroundImage: `url(${createRecipeBG})` }}>
       <BackButton />
       <h1 className='text-5xl font-semibold text-center font-sans text-yellow-100 my-10 rounded-lg p-8 '>Create New Recipe</h1>
