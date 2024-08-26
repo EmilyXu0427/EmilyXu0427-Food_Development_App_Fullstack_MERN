@@ -31,7 +31,7 @@ const Home = () => {
 
     return (
         <div
-        className ="bg-cover bg-center h-screen w-screen" 
+        className ='bg-cover bg-center h-screen w-screen' 
         style={{ backgroundImage: `url(${homeBG})` }}>
             <div className='flex justify-between items-center'>
                 <h1 className='text-5xl font-semibold text-center font-sans text-purple-800 my-10 rounded-lg p-8 '> Product Development Recipe List</h1>

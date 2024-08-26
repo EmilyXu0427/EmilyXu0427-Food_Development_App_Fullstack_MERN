@@ -1,11 +1,6 @@
 import { useState } from 'react';
-
-
-// const RecipeChatbot = () => {
-//     const [prompt, setPrompt] = useState('');
-//     const [answer, setAnswer] = useState('')
-
 import { getAnswerFromAI } from '../requests/OpenAIRequests';
+import chatBotBG from '../pages/picture/chatBotBG.jpg';
 
 const RecipeChatbot = () => {
     const [prompt, setPrompt] = useState('');
@@ -18,10 +13,10 @@ const RecipeChatbot = () => {
     }
 
     return (
-        <div className='bg-black'>
+        <div className='bg-cover bg-center h-screen w-screen'
+        style={{ backgroundImage: `url(${chatBotBG})`}}>
             <div className='flex flex-col text-xl font-sans font-semibold w-[600px] h-[800px] p-10 bg-red-200 mx-auto'>
                     <span className='flex-grow bg-white border rounded-lg'>{answer}</span>
-
                     <span className='pb-3 text-2xl pt-5'> Start chat with Recipe bot </span>
                     <textarea 
                         onChange={(event) => setPrompt(event.target.value)}
